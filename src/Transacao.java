@@ -21,7 +21,7 @@ public abstract class Transacao {
 			CategoriaTransacao categoria
 	) {
         // atribuicao do proximoId no Id de cada objeto Transacao
-		this.id += proximoId++;
+		this.id = proximoId++;
 
 		this.nome = nome;
 		this.descricao = descricao;
