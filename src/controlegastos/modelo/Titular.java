@@ -1,3 +1,4 @@
+package controlegastos.modelo;
 public class Titular {
 	private String nome;
 	

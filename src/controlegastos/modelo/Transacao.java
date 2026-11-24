@@ -1,3 +1,4 @@
+package controlegastos.modelo;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -7,11 +8,11 @@ public abstract class Transacao {
 
 	private int id;
 	
-	private String nome;
-	private String descricao;
-	private BigDecimal valor;
-	private LocalDate data;
-	private CategoriaTransacao categoria;
+	protected String nome;
+	protected String descricao;
+	protected BigDecimal valor;
+	protected LocalDate data;
+	protected CategoriaTransacao categoria;
 	
 	protected Transacao (
 			String nome,
@@ -28,8 +29,23 @@ public abstract class Transacao {
 		this.valor = valor;
 		this.data = data;
 		this.categoria = categoria;
-	};
-	
+	}
+
+	protected Transacao(
+            int idExistente,
+            String nome,
+            String descricao,
+            BigDecimal valor,
+            LocalDate data,
+            CategoriaTransacao categoria) {
+        this.id = idExistente;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.valor = valor;
+        this.data = data;
+        this.categoria = categoria;
+    }
+
 	public String getNome() {
 	    return nome;
 	}

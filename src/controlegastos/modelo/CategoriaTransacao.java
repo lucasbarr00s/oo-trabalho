@@ -1,3 +1,4 @@
+package controlegastos.modelo;
 public enum CategoriaTransacao {
     SALARIOS(TipoTransacao.RECEITA),
     HONORARIOS(TipoTransacao.RECEITA),
