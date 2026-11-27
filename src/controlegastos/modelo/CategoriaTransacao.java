@@ -18,6 +18,7 @@ public enum CategoriaTransacao {
 	
 	private final TipoTransacao tipo;
 	
+    // Modificador de acesso de Enum: Sempre privado
 	CategoriaTransacao(TipoTransacao tipo) {
 		this.tipo = tipo;
 	}
